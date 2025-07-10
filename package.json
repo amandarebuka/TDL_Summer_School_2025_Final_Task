@@ -18,8 +18,7 @@
     "wdio": "wdio run ./wdio.conf.js",
     "wdio:tag": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression",
     "format": "npx prettier --write .",
-    "test": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression @FINAL-TASK" ,
-    "open": "open .tmp/report/index.html"
+    "test-open": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression @FINAL-TASK && open .tmp/report/index.html"
   },
   "prettier": {
     "semi": true,
